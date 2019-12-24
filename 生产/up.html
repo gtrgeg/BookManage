@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>up-images</title>
+    <style>
+        .btn{
+            background: orange;
+            height: 5em;
+            width: 10em;
+            border-radius: 4px;
+            box-shadow: 2px 2px 2px #333;
+            color: #fff;
+            margin: 120x 0 0 26px;
+            padding: 8px;
+            text-shadow: 1px 1px 0px #777;
+        }
+    </style>
+</head>
+ <body>
+    <h2>上传图片</h2> 
+    <form method="post" action="write.php" enctype="multipart/form-data">
+        <fieldset>
+            <p class="row">
+                 <label for="picture">选择图片</label> 
+                <input type="file" id="picture" name="picture">
+                <p class="instructions">最大支持700K,JPG,GIF或PNG文件</p> 
+                <input type="submit" value="提交" class="btn" class="btn">
+            </p>
+        </fieldset>
+    </form>
+    <p>
+        <a href="read.php">显示图片</a>
+    </p>
+</body>
+</html>
